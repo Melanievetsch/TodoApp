@@ -1,0 +1,139 @@
+/**
+
+	TodoApp: 0.0.1
+	Marc Illien
+	Siroop
+
+	Colorschema:
+	http://www.colourlovers.com/palette/4368768/C_r_e_a_t_e_d
+
+**/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #b9dbf6;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	color: #080202;
+}
+
+.page {
+	background: #fff;
+	padding: 50px;
+}
+
+h1 {
+	font-size: 30px;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+/* Forms & Form fields */
+
+.form-add {
+	padding: 10px;
+	margin-bottom: 20px;
+	background:#b9dbf6;
+}
+
+.form-remove {
+	background:#b9dbf6;
+	padding: 10px;
+	margin-bottom: 20px;
+	text-align: right;
+}
+
+.form-element {
+	font-size: 18px;
+	padding: 10px;
+	color: black;
+	background: #fefefe;
+	border: solid 1px #725830;
+}
+
+.form-element-entry {
+	width: 70%;
+}
+
+.form-element-time {
+	width: 20%;
+}
+
+.form-element-button {
+	width: auto;
+}
+
+/* Form List */
+
+.form-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.form-list li:first-child {
+	background: #333333;
+	color: #fff;
+}
+
+.form-list-item {
+	background: #f3f3f3;
+	padding: 15px;
+	color: #725830; 
+	margin-bottom: 10px;
+}
+
+.form-list-item-sub {
+	width: 49%;
+	display: inline-block;
+}
+
+.form-list-item-sub-entry {
+
+}
+
+.form-list-item-sub-time {
+	text-align: right;
+	color:black;
+}
+
+/*Foat Beispiel */
+
+.list-div{
+	background:yellow;
+	overflow: hidden; /*ist sozusagen ein Clearfix. Overflow eigentlich nicht dafür gedacht. */
+	clear:both;
+
+	width:100%;
+}
+
+.list-div div:first-child{
+	margin-left:0; /*Abstand (Links) beim ersten Div entfernen */
+}
+
+
+/* mit Bootstrap Grid*/
+
+.row {
+	padding: 10px;
+	background: #b9dbf6;
+	margin-bottom: 20px;
+
+}
+
+.col-xs-4 {
+	margin-bottom: 20px;
+	padding-left:20px;
+
+}
+
+/*JS Ausgabefeld Device-Width und Width*/
+#ausgabe {
+	border:solid 5px #b9dbf6;
+	padding-left:3px;
+}
