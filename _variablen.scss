@@ -1,0 +1,18 @@
+/*Function Padding*/
+@function padding($pad1, $pad2) {
+  @return $pad1 + $pad2
+}
+
+
+/*Mixin*/
+@mixin background-color {
+  background: #b9dbf6;
+}
+
+
+/*Extend base-title*/
+
+%base-title {
+  font-family: Helvetica, Arial, sans-serif;
+  color: black;
+}

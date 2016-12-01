@@ -1,0 +1,26 @@
+@import 'variablen';
+
+
+.list-person {
+  @include background-color;
+
+  &__person {
+    background: #b9dbf6;
+    overflow: hidden; /*ist sozusagen ein Clearfix. Overflow eigentlich nicht dafür gedacht. */
+    clear: both;
+    width: 100%;
+    padding-left: 15px;
+  }
+  &__person:first-child {
+    margin-left: 0;
+  }
+
+}
+
+/* mit Bootstrap Grid*/
+
+.col-xs-4 {
+  margin-bottom: 20px;
+  padding-left: 20px;
+
+}

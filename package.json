@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "this is my todoapp",
   "main": "index.js",
-  "respository":{
+  "respository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/Melanievetsch/todoapp"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "gulp": "^3.9.1",
     "gulp-sass": "^2.3.2"
   }
 }

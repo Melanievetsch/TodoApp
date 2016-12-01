@@ -15,17 +15,16 @@
 
     <h2>Add new Item</h2>
 
-    <div class="row">
 
-        <div class="form-add">
+        <div class="form row">
 
 
             <div class="col-xs-12 col-sm-4 col-md-5">
-                <input class="form-element form-element-entry" type="text" style="width:354px"; placeholder="Your new Item">
+                <input class="form__form-element-entry" type="text" style="width:354px" placeholder="Your new Item">
             </div>
 
             <div class="col-xs-12 col-sm-4 col-md-3">
-                <input class="form-element form-element-time" type="date" style="width:184px"; placeholder="Time">
+                <input class="form__form-element-time" type="date" style="width:184px" placeholder="Time">
             </div>
 
             <div class="col-xs-12 col-sm-2 col-md-2">
@@ -38,95 +37,69 @@
 
         </div>
 
-    </div>
-
-    <div class="row">
-
-        <div class="col-xs-12 col-sm-8 col-md-5">
-        <div class="form-remove"></div>
 
 
-    </div>
-</div>
+    <h2>List Entries</h2>
 
-<h2>List Entries</h2>
 
-<div class="form-list-box">
-    <div class="row">
+    <div class="entries">
 
-        <div class="col-xs-12">
-            <ul class="form-list">
-        </div>
-        <div class="col-xs-12">
-            <li class="form-list-item">
-                <div class="form-list-item-sub form-list-item-sub-entry">List Item 1</div>
-                <div class="form-list-item-sub form-list-item-sub-time">Erledigen bis: 21:00</div>
+        <ul class="entries__list">
+
+            <li class="entries__item">
+                <div class="entries__sub-entry">List Item 1</div>
+                <div class="entries__sub-time">Erledigen bis: 21:00</div>
             </li>
-        </div>
-        <div class="col-xs-12">
-            <li class="form-list-item">List Item 2</li>
-        </div>
-        <div class="col-xs-12">
-            <li class="form-list-item">List Item 3</li>
-        </div>
-        <div class="col-xs-12">
-            <li class="form-list-item">List Item 4</li>
-        </div>
-        <div class="col-xs-12">
-            <li class="form-list-item">List Item 5</li>
-        </div>
-        <div class="col-xs-12">
-            <li class="form-list-item">List Item 6</li>
-        </div>
+
+            <li class="entries__item">List Item 2</li>
+
+            <li class="entries__item">List Item 3</li>
+
+            <li class="entries__item">List Item 4</li>
+
+            <li class="entries__item">List Item 5</li>
+
+            <li class="entries__item">List Item 6</li>
+
         </ul>
 
+
     </div>
 
-</div>
+    <h2>Personen</h2>
 
-<h2>Personen</h2>
+    <div class="list-person">
 
-<div class="list-persons row">
+        <div class="list-person__person">1</div>
 
-    <div class="col-xs-4">
-        <div class="person">1</div>
-    </div>
-    <div class="col-xs-4">
-        <div class="person">2</div>
-    </div>
-    <div class="col-xs-4">
-        <div class="person">3</div>
-    </div>
-    <div class="col-xs-4">
-        <div class="person">4</div>
-    </div>
-    <div class="col-xs-4">
-        <div class="person">5</div>
-    </div>
-    <div class="col-xs-4">
-        <div class="person">6</div>
-    </div>
-    <div class="col-xs-4">
-        <div class="person">7</div>
-    </div>
-    <div class="col-xs-4">
-        <div class="person">8</div>
-    </div>
-    <div class="col-xs-4">
-        <div class="person">9</div>
+        <div class="list-person__person">2</div>
+
+        <div class="list-person__person">3</div>
+
+        <div class="list-person__person">4</div>
+
+        <div class="list-person__person">5</div>
+
+        <div class="list-person__person">6</div>
+
+        <div class="list-person__person">7</div>
+
+        <div class="list-person__person">8</div>
+
+        <div class="list-person__person">9</div>
+
+
     </div>
 
-</div>
+    <h3>Zeigt (nach Refresh) die aktuelle Screen-width und device-width an</h3>
+    <p id="ausgabe"></p>
+    <script>
+        var breite = document.documentElement.clientWidth;
+        var geraetebreite = window.screen.width;
+        var ausgabe = document.getElementById('ausgabe');
+        ausgabe.innerHTML = 'width: ' + breite + '<br> device-width: ' + geraetebreite;
 
-<h3>Zeigt (nach Refresh) die aktuelle Screen-width und device-width an</h3>
-<p id="ausgabe"></p>
-<script>
-    var breite = document.documentElement.clientWidth;
-    var geraetebreite = window.screen.width;
-    var ausgabe = document.getElementById('ausgabe');
-    ausgabe.innerHTML = 'width: ' + breite + '<br> device-width: ' + geraetebreite;
-
-</script>
+    </script>
 
 </div>
 

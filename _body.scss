@@ -1,0 +1,23 @@
+@import 'variablen';
+
+.title {
+  @extend %base-title;
+  font-size: 18px;
+}
+
+.subtitle {
+  @extend %base-title;
+  font-size: 12px;
+}
+
+body {
+  @include background-color;
+}
+
+/*Hintergrund, Wrapper*/
+.page {
+  background: #fff;
+  padding: padding(40, 10);
+}
+
+
