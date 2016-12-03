@@ -1,0 +1,24 @@
+.title {
+  @extend %base-title;
+  font-size: 18px;
+}
+
+.subtitle {
+  @extend %base-title;
+  font-size: 12px;
+}
+
+body {
+background:grey;
+  margin:10px;
+  display:flex;
+}
+
+/*Hintergrund, Wrapper*/
+.page {
+  margin:0 auto;
+  background: #d9d9d9;
+  padding: padding(40, 10);
+}
+
+

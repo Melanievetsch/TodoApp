@@ -1,0 +1,44 @@
+
+/* Eingabeliste, form*/
+
+.form {
+  background: #b9dbf6;
+  margin-bottom: 10px;
+
+  &__form-element-entry {
+    width: 70%;
+
+  }
+  &__form-element-time {
+    width: 20%;
+  }
+}
+
+/*Formlist*/
+
+.entries {
+
+  &__list {
+    margin-bottom: 10px;
+    padding-left: 0;
+  }
+
+  &__item {
+    list-style-type: none;
+    padding-left: 15px;
+    @include background-color;
+  }
+  /*SASS Extend*/
+
+  .entries__sub-entry {
+    width: 80%;
+    display: inline-block;
+    padding-right: padding(5, 5);
+  }
+
+  &__sub-time {
+    @extend .entries__sub-entry;
+    text-align: right;
+    color: black;
+  }
+}
